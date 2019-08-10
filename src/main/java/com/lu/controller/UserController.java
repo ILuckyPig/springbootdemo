@@ -15,7 +15,7 @@ public class UserController {
     public List<User> getUserList() {
         // 处理"/users/"的GET请求，用来获取用户列表
         // 还可以通过@RequestParam从页面中传递参数来进行查询条件或者翻页信息的传递
-        List<User> r = new ArrayList<User>(users.values());
+        List<User> r = new ArrayList<>(users.values());
         return r;
     }
 
